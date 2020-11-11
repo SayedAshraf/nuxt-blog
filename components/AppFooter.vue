@@ -1,6 +1,6 @@
 <template>
   <footer class="AppFooter">
-    <h1>CopyRights 2020</h1>
+    <h1>Copyright &copy; 2020</h1>
   </footer>
 </template>
 
@@ -12,13 +12,14 @@ export default {
 
 <style lang="scss" scoped>
 .AppFooter {
-  background-color: #ddd;
+  background-color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 60px;
   h1 {
-    font-size: 30px;
+    font-size: 20px;
+    color: #fff;
   }
 }
 </style>

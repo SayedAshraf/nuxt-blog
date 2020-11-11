@@ -12,6 +12,9 @@
 <script>
 export default {
   // layout: 'blog-layout',
+  // middleware(context){
+  // console.log("middleware here");
+  // }
 }
 </script>
 

@@ -19,12 +19,11 @@
 
 <script>
 export default {
+  middleware: 'say-hello',
   fetch({ $axios, store }) {
-    return $axios
-      .$get('https://jsonplaceholder.typicode.com/posts')
-      .then((res) => {
-        store.commit('updatePosts', res)
-      })
+    return $axios.$get('/posts').then((res) => {
+      store.commit('updatePosts', res)
+    })
   },
   methods: {
     UpdateSelectedPost(post) {

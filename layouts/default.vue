@@ -10,6 +10,8 @@
 import AppHeader from '@/components/AppHeader'
 import AppFooter from '@/components/AppFooter'
 export default {
+  middleware: 'welcome', //global middleware
+
   name: 'layout',
   components: {
     AppHeader,

@@ -13,18 +13,16 @@ export default {
   fetch({ $axios, store, params }) {
     if (store.state.selectedPost && store.state.selectedPost.id == params.id)
       return true
-    return $axios
-      .$get(`https://jsonplaceholder.typicode.com/posts/${params.id}`)
-      .then((res) => {
-        store.commit('updateSelectedPost', res)
-      })
+    return $axios.$get(`/posts/${params.id}`).then((res) => {
+      store.commit('updateSelectedPost', res)
+    })
   },
 }
 </script>
 
 <style lang="scss" scoped>
 .post-card {
-  padding: 20px 10px;
+  padding: 10px 150px;
   .post-title {
     font-size: 50px;
     padding: 15px 10px;

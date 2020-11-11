@@ -24,6 +24,7 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100px;
+  margin-top: 15px;
   .NavBar {
     ul {
       margin: 0;
