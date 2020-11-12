@@ -12,14 +12,14 @@ export default {
 
 <style lang="scss" scoped>
 .AppFooter {
-  background-color: #333;
+  background-color: #ddd;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60px;
   h1 {
     font-size: 20px;
-    color: #fff;
+    color: #000;
   }
 }
 </style>

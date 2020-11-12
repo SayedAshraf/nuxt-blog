@@ -1,3 +1,3 @@
 export default () => {
-  console.log('sayed')
+  console.log('plugintest')
 }

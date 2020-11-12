@@ -7,6 +7,18 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: this.$store.state.selectedPost.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$store.state.selectedPost.body,
+        },
+      ],
+    }
+  },
   validate({ params }) {
     return !isNaN(params.id)
   },

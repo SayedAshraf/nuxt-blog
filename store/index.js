@@ -11,4 +11,9 @@ export default {
       state.selectedPost = post
     },
   },
+  actions: {
+    nuxtServerInit({}, {}) {
+      console.log('serverInit Called')
+    },
+  },
 }

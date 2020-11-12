@@ -20,6 +20,9 @@
 <script>
 export default {
   middleware: 'say-hello',
+  head: {
+    title: 'blogs',
+  },
   fetch({ $axios, store }) {
     return $axios.$get('/posts').then((res) => {
       store.commit('updatePosts', res)
